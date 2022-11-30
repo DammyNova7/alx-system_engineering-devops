@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#This command prints the cuuent working directory
+
+pwd

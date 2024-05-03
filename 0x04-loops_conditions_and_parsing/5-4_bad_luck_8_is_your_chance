@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#A while loop to print Best school 10 times and Hi after the 9th iteration
+
+count=1
+while [ $count -le 10 ]
+do
+    if [ $count == 8 ]
+    then
+        echo "good luck"
+    elif [ $count == 4 ]
+    then
+        echo "bad luck"
+    else
+        echo "Best School"
+    fi
+    ((count++))
+done

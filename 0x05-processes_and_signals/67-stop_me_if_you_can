@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
-# kill the process of "4-to_infinity_and_beyond"
+# script that displays:
+# To infinity and beyond indefinitely
+# With a sleep 2 in between each iteration
+# I am invincible!!! when receiving a SIGTERM signal
 
 pkill -f "7-highlander"

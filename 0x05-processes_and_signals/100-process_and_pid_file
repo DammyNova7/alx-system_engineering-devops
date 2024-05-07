@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# script creates a file containing its PID
+# prints a message indefinitely
+# prints a message when SIGTERM is received
+# prints a message when SIGINT is received
+# deletes the created file and terminates
+
+echo $$ > /var/run/myscript.pid
+
+while true
+do
+    echo "To infinity and beyond"
+    trap 'echo "I hate the kill command"' SIGTERM
+    trap 'echo "Y U no love me?!"' SIGINT
+done
+rm /var/run/myscript.pid
+exit
